@@ -7,7 +7,13 @@
 }
 
 a {
+    text-decoration: none;
     cursor: pointer;
+    color: #FFFFFF;
+}
+
+a:active {
+    color: #FFFFFF;
 }
 
 body {
@@ -30,6 +36,7 @@ header>.header-logo>svg {
 
 section {
     padding: 10px;
+    margin-bottom: 10em;
 }
 
 .social>span {
@@ -79,7 +86,9 @@ label>span {
     border-radius: 5px 0px 0px 5px
 }
 
-input {
+input[type='email'],
+input[type='text'],
+input[type='password'] {
     position: relative;
     display: block;
     flex: 1 1 auto;
@@ -95,6 +104,54 @@ input {
 input:focus {
     outline: none;
 }
+
+input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 0;
+}
+input[type='checkbox']:after {
+    box-shadow: none !important;
+}
+
+input[type='checkbox']:checked:after {
+    content: '\2714';
+    background: #E31D38 !important;
+    color: #fff !important;
+}
+
+input[type='checkbox'] {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid #919191;
+
+    display: block;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type='checkbox']:after {
+    content: "";
+    vertical-align: middle;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid #919191;
+    font-size: 10px;
+    -webkit-box-shadow: inset 0 1px 1px #E31D38, 0 1px 0 #fff;
+    -moz-box-shadow: inset 0 1px 1px #E31D38, 0 1px 0 #fff;
+    box-shadow: inset 0 1px 1px #E31D38, 0 1px 0 #fff;
+    background: #fff;
+}
+
 
 button {
     width: 100%;
@@ -116,6 +173,19 @@ button {
     width: 100%;
 }
 
+
+.form-check {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.form-check>label {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -130,6 +200,10 @@ footer {
 
 footer>a {
     margin: 0 24px;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 @media (max-width: 500px) {

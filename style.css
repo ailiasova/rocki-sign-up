@@ -167,6 +167,11 @@ button {
     border-radius: 5px;
 }
 
+.disable {
+    background-color: #92555D;
+    color: #fff;
+    cursor: not-allowed;
+}
 .row {
     display: flex;
     justify-content: space-between;

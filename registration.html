@@ -48,7 +48,7 @@
         <path d="M342.791 104.512C319.012 104.512 303.815 87.768 303.815 66.9436C303.815 46.5412 319.012 29.3751 342.791 29.3751C352.377 29.3751 363.199 32.5303 370.107 39.7889L359.804 50.1014C355.417 46.7866 349.597 44.5713 343.776 44.5713C330.55 44.5713 321.967 54.5614 321.967 66.8029C321.967 78.9036 330.55 89.3158 344.339 89.3158C350.337 89.3158 356.686 86.8607 361.724 83.2655L371.82 93.3708C365.018 100.234 354.038 104.512 342.791 104.512Z" fill="white"/>
     </svg>
 
-    <form class="flex-column">
+    <form class="flex-column" id="form" onchange="checkRequired()">
         <label>
         <span class="username">
             <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@
                       fill="#919191"/>
             </svg>
         </span>
-            <input type="text" placeholder="Username">
+            <input type="text" required placeholder="Username" name="username">
         </label>
         <label>
         <span class="email">
@@ -65,7 +65,7 @@
                       fill="#919191"/>
             </svg>
         </span>
-            <input type="email" required placeholder="E-mail of Username">
+            <input type="email" required placeholder="E-mail of Username" name="email">
         </label>
         <label>
         <span>
@@ -74,17 +74,17 @@
                       fill="#919191"/>
             </svg>
         </span>
-            <input type="password" required placeholder="Password, minimum 8 characters long">
+            <input type="password" required placeholder="Password, minimum 8 characters long" name="password">
         </label>
         <div class="form-check">
-            <input type="checkbox" required class="form-check-input" id="TermsAndConditions">
+            <input name="TermsAndConditions" type="checkbox" required class="form-check-input" id="TermsAndConditions">
             <label class="form-check-label" for="TermsAndConditions">I accept Terms and Conditions</label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" id="isArtist">
             <label class="form-check-label" for="isArtist">I am an artist who wants to upload music  (more info)</label>
         </div>
-        <button>Register</button>
+        <button type="submit" class="disable">Register</button>
         <div class="row justify-center">
             <a href="sign-up.html">
                 <span>Already have an account</span>
@@ -99,5 +99,6 @@
     <span>●</span>
     <a>Terms & Conditions</a>
 </footer>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -12,6 +12,10 @@ a {
     color: #FFFFFF;
 }
 
+a:hover {
+   color: #E31D38
+}
+
 a:active {
     color: #FFFFFF;
 }
@@ -183,6 +187,7 @@ button {
     display: flex;
     width: 100%;
     margin-top: 16px;
+    padding: 0;
 }
 
 .form-check>label {
@@ -190,7 +195,9 @@ button {
     font-size: 14px;
     margin-left: 10px;
 }
-
+.form-check>label a {
+    color: #E31D38;
+}
 footer {
     position: fixed;
     bottom: 0;

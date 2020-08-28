@@ -198,6 +198,26 @@ input[type='checkbox']:after {
 .form-check>label a {
     color: #E31D38;
 }
+.notification {
+    margin: 64px 0 40px 0;
+}
+.notification p {
+    color: #FEFEFE;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    max-width: 730px;
+    text-align: center;
+}
+
+.notification p:first-of-type {
+    margin-top: 64px;
+}
+
+.notification .btn {
+    max-width: 160px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -218,6 +238,16 @@ footer>a {
     justify-content: center;
 }
 
+@media (max-width: 1440px) {
+    .notification {
+        margin: 40px 0;
+    }
+
+    .flex-column {
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 500px) {
     .social {
         display: none;
@@ -235,5 +265,18 @@ footer>a {
     footer>a {
         margin: 0 10px;
         font-size: 12px;
+    }
+
+    .notification {
+        margin: 40px 0;
+    }
+
+    .notification p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .notification p:first-of-type {
+        margin-top: 40px;
     }
 }
